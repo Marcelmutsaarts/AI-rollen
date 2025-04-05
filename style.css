@@ -1,0 +1,155 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f7f6;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Add some space below the title */
+}
+
+.roles-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 15px; /* Add space between columns */
+}
+
+.role-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9ecef; /* Lighter gray background for columns */
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 150px; /* Ensure columns have a minimum width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.role-button {
+    padding: 10px 20px; /* Reverted padding */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 15px; /* Added margin back */
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.role-button:hover {
+    opacity: 0.9;
+}
+
+.experiments { /* Renamed from .subroles */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.add-experiment-button { /* Renamed from .add-subrole-button */
+    padding: 8px 15px;
+    border: 2px dashed #adb5bd; /* Dashed border */
+    border-radius: 5px;
+    background-color: transparent;
+    color: #495057;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-experiment-button:hover { /* Renamed */
+    background-color: #e9ecef;
+    color: #212529;
+}
+
+.experiment-item { /* Renamed from .subrole-item */
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Space out content and button */
+    align-items: center; /* Vertically align items */
+    word-wrap: break-word; /* Ensure long names wrap */
+    text-align: left; /* Align text to left */
+}
+
+.experiment-item-content {
+    flex-grow: 1; /* Allow content to take available space */
+    margin-right: 10px; /* Space between content and button */
+}
+
+.experiment-item a {
+    text-decoration: none;
+    color: #007bff; /* Standard link color */
+    display: block; /* Ensure link takes full width if it's the only content */
+}
+
+.experiment-item span { /* Style for non-link text content */
+    display: block;
+}
+
+.experiment-item a:hover {
+    text-decoration: underline;
+}
+
+.delete-experiment-button {
+    background-color: #ff4d4d; /* Lighter red for less prominent delete */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    font-size: 0.7em;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0;
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+.delete-experiment-button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
+
+/* Assigning colors similar to the image, but slightly desaturated for business feel */
+.mentor { background-color: #5a67d8; }
+.hulpmiddel { background-color: #8a5cf6; } 
+.tutor { background-color: #6a7dfe; } /* Adjusted Tutor color */
+.socratisch { background-color: #38b2ac; }
+.coach { background-color: #3cb4b8; } /* Adjusted Coach color */
+.procesbegeleider { background-color: #2c9e97; } /* Adjusted Procesbegeleider color */
+.simulator { background-color: #2c9e97; } /* Using same as Procesbegeleider */
+
+.actions-container {
+    text-align: center; /* Center the buttons */
+    margin-bottom: 20px; /* Space below the buttons */
+}
+
+.actions-container button,
+.actions-container .load-button-label {
+    padding: 10px 20px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0 10px; /* Space between buttons */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: inline-block; /* Ensure labels behave like buttons */
+}
+
+.actions-container button:hover,
+.actions-container .load-button-label:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+} 

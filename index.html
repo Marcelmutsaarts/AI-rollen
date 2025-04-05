@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Rollen in Onderwijs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AI Rollen in Onderwijs</h1>
+
+    <div class="actions-container">
+        <button id="save-button">Opslaan als JSON</button>
+        <label for="load-input" class="load-button-label">Laden van JSON</label>
+        <input type="file" id="load-input" accept=".json" style="display: none;">
+    </div>
+
+    <div class="roles-container">
+        <div class="role-column">
+            <button class="role-button tutor">Tutor</button>
+            <div class="experiments tutor-experiments">
+                 <!-- Experimenten voor Tutor komen hier -->
+                <button class="add-experiment-button" data-role="tutor">+ Experiment toevoegen</button>
+            </div>
+        </div>
+        <div class="role-column">
+            <button class="role-button socratisch">Socratisch</button>
+            <div class="experiments socratisch-experiments">
+                 <!-- Experimenten voor Socratisch komen hier -->
+                <button class="add-experiment-button" data-role="socratisch">+ Experiment toevoegen</button>
+            </div>
+        </div>
+        <div class="role-column">
+            <button class="role-button procesbegeleider">Procesbegeleider</button>
+            <div class="experiments procesbegeleider-experiments">
+                 <!-- Experimenten voor Procesbegeleider komen hier -->
+                <button class="add-experiment-button" data-role="procesbegeleider">+ Experiment toevoegen</button>
+            </div>
+        </div>
+        <div class="role-column">
+            <button class="role-button simulator">Simulator</button>
+            <div class="experiments simulator-experiments">
+                 <!-- Experimenten voor Simulator komen hier -->
+                <button class="add-experiment-button" data-role="simulator">+ Experiment toevoegen</button>
+            </div>
+        </div>
+        <div class="role-column">
+            <button class="role-button coach">Coach</button>
+            <div class="experiments coach-experiments">
+                 <!-- Experimenten voor Coach komen hier -->
+                <button class="add-experiment-button" data-role="coach">+ Experiment toevoegen</button>
+            </div>
+        </div>
+        <div class="role-column">
+            <button class="role-button mentor">Mentor</button>
+            <div class="experiments mentor-experiments">
+                <!-- Experimenten voor Mentor komen hier -->
+                <button class="add-experiment-button" data-role="mentor">+ Experiment toevoegen</button>
+            </div>
+        </div>
+        <div class="role-column">
+            <button class="role-button hulpmiddel">Hulpmiddel</button>
+            <div class="experiments hulpmiddel-experiments">
+                 <!-- Experimenten voor Hulpmiddel komen hier -->
+                <button class="add-experiment-button" data-role="hulpmiddel">+ Experiment toevoegen</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
